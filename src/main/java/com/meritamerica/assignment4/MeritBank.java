@@ -65,9 +65,23 @@ public class MeritBank {
 		return tB;
 	}
 	
-	public static double futureValue(double presentValue, double interestRate, int term) {
+	public static double RecursiveFutureValue(double presentValue, double interestRate, int term) {
 		return 0;
 	}
+		public static boolean processTransaction(Transaction transaction) 
+		
+			throws NegativeAmountException, ExceedsAvailableBalanceException, ExceedsFraudSuspicionLimitException{
+			try {
+				transaction.process();}
+			catch (NegativeAmountException e) {
+				e.printStackTrace();
+				return false;
+				}
+			}
+			
+		}
+		
+	
 	public static boolean readFromFile(String fileName) throws ParseException {
 		File file = new File(fileName);
 		

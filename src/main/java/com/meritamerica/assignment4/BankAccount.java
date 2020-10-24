@@ -90,15 +90,19 @@ public boolean deposit(double amount) {
 		return false;	
 }
 
-public double futureValue(int years, double balance, double interest) {
+public double recursiveFutureValue(int years, double balance, double interest) {
 	
 	if (years == 0) {
 		balance = this.balance;
 		return balance;
 	}
-	else if (years == )
+	else if (years == 1 ) {
+		balance += balance*interest;
 	}
-	return ;
+	else {
+		return (futureValue(years-1,interest,balance)) + futureValue(years-1,interest,balance) - ( futureValue(years-2,interest,balance));
+	}
+	return balance;
 }
 
 
