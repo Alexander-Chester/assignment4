@@ -27,7 +27,9 @@ public class CDAccount extends BankAccount {
 		offering = new CDOffering(term, interest);
 		
 	}
-
+	pulic void setAccount() {
+		this.account = new account;
+	}
 	
 
 	public double getBalance() {

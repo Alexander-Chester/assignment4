@@ -33,7 +33,7 @@ public abstract class Transaction {
 		
 	}
 	public abstract void process() {
-		throws NegativeAmountException, ExceedsAvailableBalanceException, ExceedsFraudSuspicionLimitException
+		throws NegativeAmountException, ExceedsAvailableBalanceException, ExceedsFraudSuspicionLimitException;
 	}
 	public boolean isProcessedByFraudTeam() {
 	

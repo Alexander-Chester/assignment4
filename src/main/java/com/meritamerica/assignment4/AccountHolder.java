@@ -26,8 +26,8 @@ private double savingsBalance = 0;
 
 private CDOffering cdOffering = new CDOffering(0,0);
 
-private CDAccount[] amountCDAccounts = new CDAccount[0];
-private CDAccount cdAccount = new CDAccount(cdOffering,0);
+public CDAccount[] amountCDAccounts = new CDAccount[0];
+public CDAccount cdAccount = new CDAccount(cdOffering,0);
 private double cdBalance = 0;
 
 private double combinedBalance = 0;

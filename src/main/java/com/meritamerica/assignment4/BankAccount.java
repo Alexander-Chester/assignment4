@@ -100,7 +100,7 @@ public double recursiveFutureValue(int years, double balance, double interest) {
 		balance += balance*interest;
 	}
 	else {
-		return (futureValue(years-1,interest,balance)) + futureValue(years-1,interest,balance) - ( futureValue(years-2,interest,balance));
+		return (recursiveFutureValue(years-1,interest,balance)) + recursiveFutureValue(years-1,interest,balance) - ( recursiveFutureValue(years-2,interest,balance));
 	}
 	return balance;
 }
